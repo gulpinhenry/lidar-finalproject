@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiDAR</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="./index.html" class="brand-logo"
+          >LiDAR by Henry Kam, Physics 4A Final</a
+        >
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#about-lidar">More Info</a></li>
+          <li><a href="./workscited.html">Works Cited</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="cover">
+      <div id="title-text">
+        <h1>LiDAR</h1>
+        <h3>The cross-section of physics and computer science</h3>
+      </div>
+      <!-- <img> some image in the background -->
+    </section>
+    <main>
+      <section id="about-lidar">
+        <h3>What is LiDAR?</h3>
+        <p>
+          Light Detection and Ranging (LiDar), is a method of range finding that
+          scientists from all fields have been using. From building
+          topographical maps to even improving augmented reality, LiDAR is
+          certainly an important cross-section between physics and computer
+          science and many other related fields. Similar to sonar and radar,
+          which use sound and radio waves respectively, LiDAR instead utilizes
+          the speed of light as well as time to calculate how far away something
+          is. LiDAR machines send out pulses of lasers to calculate the time
+          elapsed as the laser beams bounce back to the machine. This allows for
+          computers to be able to render 3D surfaces of a particular
+          environment.
+          <!-- tab and enter here -->
+          LiDAR machines typically utilize three main components: a GPS
+          receiver, a scanner, and a laser. Although many of these machines can
+          be found in airplanes and cars, they can also be found inside the
+          latest phones. These devices use light waves past the eye’s visible
+          spectrum, which also implies that LiDAR can also be used in the dark
+          as well.
+        </p>
+      </section>
+      <section id="lidar-functionality">
+        <main>
+          <h3>How does LiDAR work?</h3>
+          <div id="lidar-demo-container">
+            <ul id="lidar-demo">
+              <li>picture 1</li>
+              <li>picture 2</li>
+              <li>picture 3</li>
+            </ul>
+          </div>
+          <p>
+            Let’s say I was in a self driving car. In order for me to drive
+            safely, I would need to have a precise model of what my surroundings
+            look like. This is where LiDAR works fantastically. For LiDAR to
+            work, I will emit pulses of light waves from my vehicle in all
+            directions. Soon, the light will bounce off an object blocking the
+            lights path, and the sensor will be notified of this reflection. And
+            through simple kinematics (explained below), a computer can compute
+            how far away the surroundings are based on how long it took for the
+            light to be reflected. If this process is repeatedly executed in
+            real time, the computer is able to generate a rough map of its
+            surroundings.
+          </p>
+        </main>
+        <aside id="case-container">
+          <ul id="case">
+            <li>
+              <h4>Case: Topographic LiDAR</h4>
+              <p>
+                One prominent application of LiDAR is to examine tree growth,
+                perhaps utilizing the density of trees to predict forest fires
+                or give certain estimates on carbon emissions and other
+                ecological data. In this case, planes with LiDAR machines use
+                infrared lasers to efficiently scan through an entire forest
+                instead of needing many people to manually estimate regions of
+                forest.
+              </p>
+            </li>
+            <li>
+              <h4>Case: iPhone Face ID</h4>
+              <p>
+                LiDAR can also be found in daily devices like facial recognition
+                features. With LiDAR, the phone is able to create a scan of
+                facial features to recognize the phone’s owner.
+              </p>
+            </li>
+          </ul>
+        </aside>
+      </section>
+      <section id="relevance">
+        <h3>LiDAR's Relevance to Physics</h3>
+        <div>
+          <ul id="physics">
+            <li>
+              <p>
+                Much of LiDAR’s basic functionality has to do with the
+                kinematics we’ve learned in class. We learned that velocity is
+                equal the rate of change and direction of an object with respect
+                to time. Because the speed of light is constant (299 792 458 m /
+                s), and our machine can calculate the time it took for the light
+                wave to reflect, we can multiply the speed of light with the
+                time to get the distance the light traveled, to get an accurate
+                prediction of how far something is from the LiDAR machine.
+              </p>
+              <!-- <img> add picture -->
+            </li>
+            <li>
+              <p>
+                Because most LiDAR machines are utilized on non-stationary
+                machines, a unique property called the doppler effect arises.
+                Because the light waves pulse with the same frequency from the
+                machine, but the machine itself is moving. Thus there will be a
+                change in relative velocity and thus a change in frequency in
+                the observer’s frame of reference. A real life example of this
+                is when a racecar roars by and you can hear the change in pitch
+                of the car engine. As the car approaches you with a velocity the
+                frequency of the pulses increase thus generating a higher pitch.
+              </p>
+              <!-- <img> add picture -->
+            </li>
+            <li>
+              <p>
+                Light travels undergoing simple harmonic motion, or SHM for
+                short. SHM is a type of motion where these waves oscillate
+                around a center, like a pendulum, or in more specific terms,
+                when the acceleration of the particle or wave is directly
+                proportional to its center (mean position). Because there are
+                other light waves while the LiDAR machine is operating, there
+                can be constructive and destructive interference, where waves
+                become superimposed. Sometimes they can cancel out, like white
+                noise, or even amplify the wave, like combining music speakers.
+              </p>
+              <!-- <img> add picture -->
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
