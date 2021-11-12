@@ -12,19 +12,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <!-- <nav style="color: white;">
       <div class="nav-wrapper">
         <a href="./index.html" class="brand-logo"
           >LiDAR by Henry Kam, Physics 4A Final</a
         >
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#about-lidar">More Info</a></li>
+          <li><a href="#lidar-functionality">More Info</a></li>
           <li><a href="./workscited.html">Works Cited</a></li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
+    <nav style="color: white;">
+        <div class="nav-wrapper">
+          <a href="./index.html" class="brand-logo"
+            >LiDAR by Henry Kam, Physics 4A Final</a
+          >
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#lidar-functionality">More Info</a></li>
+            <li><a href="./workscited.html">Works Cited</a></li>
+          </ul>
+        </div>
+      </nav>
     <section id="cover">
-      <div id="title-text" class = "flow-text">
+      <div id="title-text" class="flow-text">
         <h1>LiDAR</h1>
         <h3>The cross-section of physics and computer science</h3>
       </div>
@@ -32,7 +43,7 @@
     <main>
       <section id="about-lidar">
         <h3>What is LiDAR?</h3>
-        <p class = "flow-text">
+        <p class="flow-text">
           Light Detection and Ranging (LiDar), is a method of range finding that
           scientists from all fields have been using. From building
           topographical maps to even improving augmented reality, LiDAR is
@@ -44,7 +55,7 @@
           elapsed as the laser beams bounce back to the machine. This allows for
           computers to be able to render 3D surfaces of a particular
           environment.
-          <br>
+          <br />
           LiDAR machines typically utilize three main components: a GPS
           receiver, a scanner, and a laser. Although many of these machines can
           be found in airplanes and cars, they can also be found inside the
@@ -58,12 +69,12 @@
           <h3>How does LiDAR work?</h3>
           <div id="lidar-demo-container">
             <ul id="lidar-demo">
-              <li><img src = "./images/why-lidar-1.png"></li>
-              <li><img src = "./images/why-lidar-2.png"></li>
-              <li><img src = "./images/why-lidar-3.png"></li>
+              <li><img src="./images/why-lidar-1.png" /></li>
+              <li><img src="./images/why-lidar-2.png" /></li>
+              <li><img src="./images/why-lidar-3.png" /></li>
             </ul>
           </div>
-          <p class = "flow-text">
+          <p class="flow-text">
             Let’s say I was in a self driving car. In order for me to drive
             safely, I would need to have a precise model of what my surroundings
             look like. This is where LiDAR works fantastically. For LiDAR to
@@ -106,7 +117,7 @@
         <h3>LiDAR's Relevance to Physics</h3>
         <div>
           <ul id="physics">
-            <li>
+            <li id="kinematics">
               <p>
                 Much of LiDAR’s basic functionality has to do with the
                 kinematics we’ve learned in class. We learned that velocity is
@@ -117,9 +128,10 @@
                 time to get the distance the light traveled, to get an accurate
                 prediction of how far something is from the LiDAR machine.
               </p>
-              <!-- <img> add picture -->
+              <img src="./images/3-Figure1-1.png" />
             </li>
-            <li>
+            <li id="doppler">
+              <img src= "./images/doppler.jpg"/>
               <p>
                 Because most LiDAR machines are utilized on non-stationary
                 machines, a unique property called the doppler effect arises.
@@ -131,9 +143,8 @@
                 of the car engine. As the car approaches you with a velocity the
                 frequency of the pulses increase thus generating a higher pitch.
               </p>
-              <!-- <img> add picture -->
             </li>
-            <li>
+            <li id="shm">
               <p>
                 Light travels undergoing simple harmonic motion, or SHM for
                 short. SHM is a type of motion where these waves oscillate
@@ -145,7 +156,7 @@
                 become superimposed. Sometimes they can cancel out, like white
                 noise, or even amplify the wave, like combining music speakers.
               </p>
-              <!-- <img> add picture -->
+              <img src="./images/Wave-interference-overview-sound-waves.jpg">
             </li>
           </ul>
         </div>

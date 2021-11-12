@@ -1,70 +1,135 @@
-*{
- 
+* {
+    overflow-x: hidden;
 }
-#cover{
-    height: 95vh;
-    /* border: solid black 2px; */
-    margin-top: -42px;
-    background-image: url("./images/titlepage.jpg");
-    background-size: cover;
+nav{
+    z-index: 5;
+}
+#cover {
+  height: 100vh;
+  /* border: solid black 2px; */
+  margin-top: -42px;
+  background-image: url("./images/titlepage.jpg");
+  background-size: cover;
+}
 
+#title-text {
+  color: white;
+  position: relative;
+  top: 30%;
+  left: 10%;
+  text-shadow: 2px 2px 5px red;
 }
-
-
-#title-text{
-    color: white;
-    position: relative;
-    top: 30%;
-    left: 10%;
-    text-shadow: 2px 2px 5px red;
+#about-lidar {
+  padding: 80px 10%;
+  background-color: #bdd4e7;
+  background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
 }
-#about-lidar{
-    padding: 80px 10%;
-    background-color: #bdd4e7;
-    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+#about-lidar h3 {
+  padding-bottom: 30px;
+  text-align: center;
 }
-#about-lidar h3{
-    padding-bottom: 30px;
-    text-align: center;
-}
-#lidar-functionality{
-    
-    padding: 30px 20px;
-    background-color: azure;
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    border: 2px solid black;
+#lidar-functionality {
+  padding: 30px 20px;
+  background-image: url("./images/1_vrB0Jrbt4Sjhkw2g_ZOqhA.jpeg");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid black;
 }
 #lidar-functionality main {
-    margin: 40px 50px;
-    padding: 10px 40px;
-    width: 70%;
-    border: solid 2px red;
-    background-color: gray;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 5%;
+  margin: 40px 50px;
+  padding: 10px 40px;
+  width: 70%;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5%;
+  opacity: 90%;
+}
+#lidar-functionality h3{
+    overflow-y: hidden;
 }
 #lidar-functionality aside {
-    width: 30%;
-    padding: auto 50px;
-    background-color: gray;
-    border-radius: 5%;
-    
+  width: 30%;
+  padding: auto 50px;
+  background-color: gray;
+  border-radius: 5%;
+  opacity: 80%;
 }
-#lidar-demo{
-    display: flex;
-    justify-content: space-evenly;
+#lidar-demo {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #969ba5;
+  padding: 20px;
+  border-radius: 10px;
 }
-#case{
-    position: relative;
-    top: 10px;
-    height: 90%;
-    padding: 50px 10%;
-    /* border: black solid 2px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+#case {
+  position: relative;
+  top: 10px;
+  height: 90%;
+  padding: 50px 10%;
+  /* border: black solid 2px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#case h4{
+    overflow-y: hidden;
+}
+#relevance {
+  padding: 60px;
+  background-color: #bdd4e7;
+  background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+  min-height: 80vh;
+}
+#relevance h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  overflow-y: hidden;
+}
+
+#physics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 70vh;
+}
+
+#physics li {
+  border-radius: 30px;
+  padding: 40px 50px;
+  margin-top: 20px;
+  display: flex;
+  min-height: 300px;
+  text-align: justify;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+  color: white;
+
+}
+
+#physics li p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+  /* width: 70%;
+    min-height: 300px; */
+}
+
+#physics li img {
+  width: 400px;
+  height: 300px;
+}
+
+#kinematics,
+#shm {
+  width: 80%;
+}
+#doppler {
+  margin-right: 0;
+  margin-left: auto;
+  width: 80%;
 }
