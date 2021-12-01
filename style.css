@@ -78,6 +78,11 @@
   border-radius: 5%;
   opacity: 80%;
 }
+#lidar-demo img{
+  /* object-fit: scale-down; */
+  max-width: 100%;
+  margin-bottom: 2%;
+}
 #lidar-demo {
   display: flex;
   justify-content: space-evenly;
@@ -94,6 +99,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+#case h3{
+  text-align: center;
 }
 #case h4{
     overflow-y: hidden;
@@ -135,13 +143,13 @@
   justify-content: center;
   align-items: center;
   margin: 0px 20px;
-  /* width: 70%;
-    min-height: 300px; */
 }
 
 #physics li img {
-  width: 400px;
-  height: 300px;
+  min-width: 20%;
+  object-fit: scale-down;
+  /* width: 400px;
+  height: 300px; */
 }
 
 #kinematics,
@@ -152,4 +160,89 @@
   margin-right: 0;
   margin-left: auto;
   width: 80%;
+}
+@media only screen and (max-width: 1024px) {
+  #title-text {
+    left: 5%;
+  } 
+}
+@media only screen and (max-width: 768px) {
+  #navcont a{
+    font-size: 80%;
+  }
+  #lidar-functionality{
+    flex-direction: column;
+  }
+  #lidar-functionality main {
+    margin: 40px 2%;
+    padding: 10px 40px;
+    width: 100%;
+  }
+  #lidar-demo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #969ba5;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  #lidar-demo img{
+    /* object-fit: scale-down; */
+    max-width: 100%;
+    margin-bottom: 2%;
+  }
+  #lidar-functionality aside {
+    width: 100%;
+  }
+  #physics li {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+@media only screen and (max-width: 425px) {
+  #navcont a{
+    font-size: 30%;
+    font-weight: bold;
+  }
+  #title-text {
+    left: 0%;
+    margin: auto 5%;
+  } 
+  #title-text h1{
+    font-size: 300%;
+    text-align: center;
+  }
+  #title-text h3{
+    font-size: 200%;
+    text-align: center;
+  }
+
+
+  #physics li {
+    padding: 40px 5px;
+  }
+  
+  #physics li p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5%;
+  }
+  
+  #physics li img {
+    min-width: 20%;
+    max-width: 90%;
+    margin: auto auto;
+    object-fit: scale-down;
+  }
+  
+  #kinematics,
+  #shm, #doppler {
+    width: 95%;
+    margin: auto auto;
+  }
+
+  
+
 }
